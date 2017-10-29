@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Web Project 2510</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-class>pairprogramming.com.HelloWorldServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayAllBooksServlet</servlet-name>
+  	<servlet-class>pairprogramming.com.DisplayAllBooksServlet</servlet-class>
+  </servlet>
+    
+  <servlet>
+  <servlet-name>FindByAuthorServlet</servlet-name>
+  <servlet-class>pairprogramming.com.FindByAuthorServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>AddNewBookServlet</servlet-name>
+  <servlet-class>pairprogramming.com.AddNewBookServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>AddToCartServlet</servlet-name>
+  <servlet-class>pairprogramming.com.AddToCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>ViewCartServlet</servlet-name>
+  <servlet-class>pairprogramming.com.ViewCartServlet</servlet-class>
+  </servlet>
+    
+    
+  
+  
+  <servlet-mapping>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <url-pattern>/hello-everyone.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DisplayAllBooksServlet</servlet-name>
+  	<url-pattern>/all-books.html</url-pattern>
+  </servlet-mapping>  
+ 
+   <servlet-mapping>
+  	<servlet-name>FindByAuthorServlet</servlet-name>
+  	<url-pattern>/find-books.html</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+  	<servlet-name>AddNewBookServlet</servlet-name>
+  	<url-pattern>/AddNewBook.html</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+  	<servlet-name>AddToCartServlet</servlet-name>
+  	<url-pattern>/addToCart.html</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+  	<servlet-name>ViewCartServlet</servlet-name>
+  	<url-pattern>/viewCart.html</url-pattern>
+  </servlet-mapping> 
+ 
+ <session-config>
+ 	<session-timeout>0</session-timeout>
+ </session-config>
+    
+</web-app>
